@@ -11,3 +11,10 @@ const newgreating = function(){
 // calling a function
 great()
 newgreating()
+
+// parametas and arguments
+const speak = function(name='harr', time='night'){
+    console.log(`good day ${name}`)
+}
+
+speak('kamau', 'morning')
