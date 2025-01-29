@@ -18,3 +18,12 @@ const speak = function(name='harr', time='night'){
 }
 
 speak('kamau', 'morning')
+
+
+// functions with return type
+
+const area = function(raduis=0){
+    let area = 3.14 * raduis**2
+    return area
+}
+console.log(`the area is ${area(7)}`)
