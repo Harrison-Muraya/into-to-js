@@ -57,3 +57,17 @@ people.forEach(logperson)
 people.forEach((people,index)=>{
     console.log(`this is form my brain ${index}: ${people} are you oky`)
 })
+
+
+// callback function in action
+let ul = document.querySelector('.animals')
+
+const animals = ['cow', 'dog', 'sheep', 'cat', 'rabbit', 'chicken' ]
+
+let html = ``
+
+animals.forEach(animal => {
+    html += `<li style="color: red ">${animal}</li>`
+})
+ul.innerHTML = html
+console.log(html)
