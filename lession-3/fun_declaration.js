@@ -51,3 +51,9 @@ const logperson = (person, index) => {
 }
 
 people.forEach(logperson)
+
+// same as the top
+
+people.forEach((people,index)=>{
+    console.log(`this is form my brain ${index}: ${people} are you oky`)
+})
