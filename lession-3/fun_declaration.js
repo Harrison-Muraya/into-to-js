@@ -38,3 +38,16 @@ console.log('calling from arrow function ', area(14))
 
 const greating = () => 'hello, world'
 console.log('from arrow function mini: ', greating())
+
+// callback functions
+let people = ['harrison','musa','yakub', 'kasongo','wamunyoro']
+// people.forEach(function(person){
+//     console.log(person)
+// })
+
+
+const logperson = (person, index) => {
+    console.log(`${index} - hello ${person}`)
+}
+
+people.forEach(logperson)
