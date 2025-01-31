@@ -65,7 +65,6 @@ let ul = document.querySelector('.animals')
 const animals = ['cow', 'dog', 'sheep', 'cat', 'rabbit', 'chicken' ]
 
 let html = ``
-
 animals.forEach(animal => {
     html += `<li style="color: red ">${animal}</li>`
 })
