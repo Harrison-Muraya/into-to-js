@@ -9,3 +9,11 @@ par.forEach(pa=>{
 
 console.log(par)
 console.log(para)
+
+// other was of selector
+
+const title = document.getElementById('title')
+const error = document.getElementsByClassName('error')
+console.log(title)
+console.log(error)
+
