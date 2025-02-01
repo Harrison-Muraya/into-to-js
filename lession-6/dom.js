@@ -49,4 +49,9 @@ link.innerText = 'youtube'
 const msg = document.querySelector('.list')
 console.log(msg)
 msg.setAttribute('class','success')
-console.log(msg)
+console.log(msg)  
+
+//css
+h1.style.color = 'teal'
+h1.style.margin = '50px'
+h1.style.fontSize = '60px'
