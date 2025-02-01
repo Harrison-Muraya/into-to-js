@@ -53,3 +53,36 @@ person.logout()
 console.log(this)
 person.logBlogs()
 
+
+//ojects in arrays
+ 
+const auther = {
+    name: 'harrison',
+    age: 28,
+    email: 'harrisonmuraya@gmail.com',
+    location: 'nairobi',
+    blogs: [
+        {title: 'how to write java', likes: 30}, 
+        {title: 'c# is the best', likes: 40}, 
+        {title:'c# is the best', likes: 70}
+    ],
+    login (){
+        console.log('you are logged in')
+    },
+
+    logout (){
+        console.log('you are logged out now')
+    },
+
+    logBlogss (){
+        console.log('this is my blogs')
+        this.blogs.forEach(blog =>{
+            console.log(blog.title)
+        })
+    },
+}
+
+logBlogss()
+
+
+
