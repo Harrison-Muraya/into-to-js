@@ -32,15 +32,24 @@ const person = {
     email: 'harrisonmuraya@gmail.com',
     location: 'nairobi',
     blog: ['how to write java', 'c# is the best', 'c# is the best'],
-    login: function(){
+    login (){
         console.log('you are logged in')
     },
 
-    logout: function(){
+    logout (){
         console.log('you are logged out now')
-    }
+    },
+
+    logBlogs (){
+        console.log('this is my blogs')
+        this.blog.forEach(blog =>{
+            console.log(blog)
+        })
+    },
 }
 
 person.login()
 person.logout()
+console.log(this)
+person.logBlogs()
 
