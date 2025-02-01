@@ -17,15 +17,24 @@ const error = document.getElementsByClassName('error')
 console.log(title)
 console.log(error)
 
+const people = ['joy','kim', 'mark']
+
 // adding and changing page content
 
 const h1 = document.querySelector('h1')
 const paras = document.querySelectorAll('p')
+const list = document.querySelector('.list')
 
-paras.forEach(para=>{
-    para.innerText += `this is new text from javascript`
+
+paras.forEach((para)=>{
+    para.innerText += ` this is new text from javascript`
+})
+
+people.forEach(person=>{
+    list.innerHTML += ` <strong>${person}</strong>`
 })
 
 h1.innerText = 'wellcome '
+list.innerHTML += `<li>me from in the  java </li>`
 
 console.log(h1.innerText)
