@@ -38,3 +38,15 @@ h1.innerText = 'wellcome '
 list.innerHTML += `<li>me from in the  java </li>`
 
 console.log(h1.innerText)
+
+
+// getting and setting attribues
+
+const link = document.querySelector('a')
+link.setAttribute('href','https://www.youtube.com')
+link.innerText = 'youtube'
+
+const msg = document.querySelector('.list')
+console.log(msg)
+msg.setAttribute('class','success')
+console.log(msg)
