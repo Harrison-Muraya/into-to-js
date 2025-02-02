@@ -52,6 +52,14 @@ msg.setAttribute('class','success')
 console.log(msg)  
 
 //css
+
+console.log(h1.style)
 h1.style.color = 'teal'
 h1.style.margin = '50px'
 h1.style.fontSize = '60px'
+
+
+
+// addind class
+
+const content = document.querySelector()
