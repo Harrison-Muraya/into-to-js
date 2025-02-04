@@ -2,14 +2,14 @@
 // getting data from form
 const form = document.querySelector('.form')
 const feedback = document.querySelector('.feedback')
-
+ const userpattern =/^[a-zA-Z]{6,12}$/
 
 form.addEventListener('submit', e=>{
     e.preventDefault()
     console.log(form.username.value)
 // validating data form the user
     const username = form.username.value
-    const userpattern =/^[a-zA-Z]{6,12}$/
+   
 
     if(userpattern.test(username)){
         // feedback good infor
@@ -19,7 +19,21 @@ form.addEventListener('submit', e=>{
         // feedback help
         feedback.textContent = `that username is not valid`
     }
+})
 
+// live feedback
+
+form.username.addEventListener('keyup', e =>{
+    // console.log(e.target.value, form.username.value)
+    if(userpattern.test(e.target.value)){
+        form.username.setAttribute('class','success')
+        feedback.textContent =  `that username is valid`
+    }
+    else{
+        // feedback help
+        form.username.setAttribute('class','error')
+        feedback.textContent = `that username is not valid`
+    }
 })
 
 
