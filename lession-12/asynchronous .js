@@ -38,15 +38,24 @@ const getTodos =(callback) => {
 
 
 
-getTodos((err, data)=>{
-    console.log('call back fired')
+// getTodos((err, data)=>{
+//     console.log('call back fired')
 
-    if(err){
-        console.log(err)
-    }
-    else{
-        console.log(data)
-    }
-})
+//     if(err){
+//         console.log(err)
+//     }
+//     else{
+//         console.log(data)
+//     }
+// })
+
+// callbback hell
+const request = new XMLHttpRequest()
+request.open('GET','https://jsonplaceholder.typicode.com/todos/')
+request.send()
 
 
+const infp = JSON.parse(request.responseText)
+getTodos(info, (err, data)=>[
+    console.log(data)
+])
