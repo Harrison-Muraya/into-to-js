@@ -1,5 +1,5 @@
-const addForm = document.querySelector('.add')
 const list = document.querySelector('.todos')
+const addForm = document.querySelector('.add')
 const search = document.querySelector('.search input')
 
 const generateTemplate = todo => {

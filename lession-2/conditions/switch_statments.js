@@ -1,6 +1,4 @@
 let grade = 'c'
-
-
 switch(grade.toUpperCase()){
     case 'A':
         console.log('You got A')

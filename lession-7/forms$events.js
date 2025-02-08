@@ -35,15 +35,7 @@ form.username.addEventListener('keyup', e =>{
         feedback.textContent = `that username is not valid`
     }
 })
-
-
-
-
-
 const usernamee = 'harrrr'
-
-
-
 // reguler exprssions
 const patten = /[a-z]{6,}/
 let results = patten.test(usernamee)

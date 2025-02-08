@@ -19,22 +19,22 @@
 
 // 
 
-const getTodos =(callback) => {
-    const request = new XMLHttpRequest()
-    request.addEventListener('readystatechange', ()=>{
+// const getTodos =(callback) => {
+//     const request = new XMLHttpRequest()
+//     request.addEventListener('readystatechange', ()=>{
         
-        if(request.readyState ===4 && request.status ===200){
-            const data = JSON.parse(request.responseText)
-            callback(undefined, data)
-        }
-        else if (request.readyState===4){
-            callback("could not load the data", undefined)
-        }
+//         if(request.readyState ===4 && request.status ===200){
+//             const data = JSON.parse(request.responseText)
+//             callback(undefined, data)
+//         }
+//         else if (request.readyState===4){
+//             callback("could not load the data", undefined)
+//         }
             
-    })
-    request.open('GET','https://jsonplaceholder.typicode.com/todos/')
-    request.send()
-}
+//     })
+//     request.open('GET','https://jsonplaceholder.typicode.com/todos/')
+//     request.send()
+// }
 
 
 
@@ -50,12 +50,20 @@ const getTodos =(callback) => {
 // })
 
 // callbback hell
-const request = new XMLHttpRequest()
-request.open('GET','https://jsonplaceholder.typicode.com/todos/')
-request.send()
 
 
-const infp = JSON.parse(request.responseText)
-getTodos(info, (err, data)=>[
-    console.log(data)
-])
+// Promise basics
+const getSomthing = ()=>{
+    return new Promise((resolve, reject)=>{
+        // resolve('somedata')
+        reject('some erros cought')
+    })
+}
+
+// getSomthing().then(data=>{
+//     console.log(data)
+// }), (erro)=>{
+//     console.log(erro)
+// }
+
+getSomthing().then(data)
